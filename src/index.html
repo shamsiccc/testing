@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Card Validator</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Card Validator</h1>
+        
+        <div class="card-examples">
+            <div class="card-example" data-card="visa">
+                <div class="card-header">
+                    <img src="img/card-visa.png" alt="Visa" class="card-icon">
+                    <div class="card-title">VISA</div>
+                </div>
+                <div class="card-number">4485 4289 9653 7790</div>
+            </div>
+            <div class="card-example" data-card="mastercard">
+                <div class="card-header">
+                    <img src="img/card-mastercard.png" alt="MasterCard" class="card-icon">
+                    <div class="card-title">MasterCard</div>
+                </div>
+                <div class="card-number">5555 5555 5555 4444</div>
+            </div>
+            <div class="card-example" data-card="mir">
+                <div class="card-header">
+                    <img src="img/card-mir.png" alt="Mir" class="card-icon">
+                    <div class="card-title">Mir</div>
+                </div>
+                <div class="card-number">2201 3820 0000 0021</div>
+            </div>
+            <div class="card-example" data-card="jcb">
+                <div class="card-header">
+                    <img src="img/card-jcb.png" alt="JCB" class="card-icon">
+                    <div class="card-title">JCB</div>
+                </div>
+                <div class="card-number">3530 1113 3330 0000</div>
+            </div>
+            <div class="card-example" data-card="amex">
+                <div class="card-header">
+                    <img src="img/card-amex.png" alt="American Express" class="card-icon">
+                    <div class="card-title">AmEx</div>
+                </div>
+                <div class="card-number">3787 44936 71000</div>
+            </div>
+            <div class="card-example" data-card="discover">
+                <div class="card-header">
+                    <img src="img/card-discover.png" alt="Discover" class="card-icon">
+                    <div class="card-title">Discover</div>
+                </div>
+                <div class="card-number">6011 1111 1111 1117</div>
+            </div>
+            <div class="card-example" data-card="diners">
+                <div class="card-header">
+                    <img src="img/card-diners.png" alt="Diners Club" class="card-icon">
+                    <div class="card-title">Diners</div>
+                </div>
+                <div class="card-number">3056 9309 0259 04</div>
+            </div>
+        </div>
+        
+        <form data-widget="card-form-widget">
+            <div class="form-control">
+                <label for="card-input">Enter card number:</label>
+                <input id="card-input" data-id="card-input" type="text" class="input" 
+                       placeholder="XXXX XXXX XXXX XXXX">
+            </div>
+            <button type="button" data-id="card-submit" class="btn">Click to Validate</button>
+        </form>
+        
+        <div class="result hidden" id="validation-result">
+            <div class="result-text">Enter card number and click "Validate"</div>
+        </div>
+    </div>
+</body>
+</html>

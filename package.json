@@ -7,7 +7,7 @@
     "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "lint": "eslint . --fix",
-    "test": "jest --testPathPattern=./src/",
+    "test": "jest --testPathPattern=./src/ --testPathIgnorePatterns='.*\\.complete\\.js$'" ,
     "coverage": "jest --testPathPattern=./src/ --coverage",
     "e2e": "jest --testPathPattern=./e2e/",
     "doc": "jsdoc -c jsdoc.conf.json",

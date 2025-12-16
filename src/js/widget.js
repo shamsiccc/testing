@@ -32,7 +32,7 @@ export default class CardWidget {
     this.cardInput = document.getElementById('card-input');
     this.submitBtn = document.querySelector('[data-id="card-submit"]');
     this.resultDiv = document.getElementById('validation-result');
-    this.resultText = this.resultDiv?.querySelector('.result-text');
+    this.resultText = this.resultDiv && this.resultDiv.querySelector('.result-text');
     this.cardExamples = document.querySelectorAll('.card-example');
   }
 
